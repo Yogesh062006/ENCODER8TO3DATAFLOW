@@ -40,17 +40,31 @@ Figure 02  Encoder 8 * 3
 
 **PROGRAM**
 
+odmule enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= ( y4 | y5 | y6 | y7);
+assign b= ( y2 | y3 | y6 | y7);
+assign c= ( y1 | y3 | y5 | y7);
+endmodule
+
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+Developed by:Yogesh S
+
+RegisterNumber:24901108
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![WhatsApp Image 2024-12-04 at 14 22 41_b6fcea05](https://github.com/user-attachments/assets/0859af80-f803-4c31-98b2-3f7c86959fa7)
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-**RESULTS**
+![WhatsApp Image 2024-12-04 at 14 22 42_c5942bec](https://github.com/user-attachments/assets/afd86747-cf0b-4de8-ada1-210a3eea9e16)
 
+**RESULTS**
+The 8-to-3 encoder is a digital circuit that takes 8 input bits and encodes them into a 3-bit output. It is commonly used in situations where multiple input lines need to be represented by fewer output lines, such as in prioritizing signals or binary-to-decimal conversions.
 
 
 
